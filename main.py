@@ -7,7 +7,7 @@ from pathlib import Path
 def Scraper(uname,passwd):
     try:
         with sync_playwright() as p:
-            browser = p.chromium.launch(headless=False,slow_mo=50)
+            browser = p.chromium.launch(headless=False)
             page = browser.new_page()
             page.goto("https://www.texasgasservice.com/account")
             page.fill("input#txtusername", uname)
