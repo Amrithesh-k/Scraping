@@ -4,8 +4,8 @@ import numpy as np
 import pandas as pd
 from pathlib import Path
 
-uname = "AUSNE-S"
-passwd = "Austin!22"
+uname = "********"
+passwd = "*******"
 
 with sync_playwright() as p:
     browser = p.webkit.launch(headless=False,slow_mo=50)
