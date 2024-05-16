@@ -7,7 +7,7 @@ from pathlib import Path
 def Scraper(uname,passwd):
     try:
         with sync_playwright() as p:
-            browser = p.webkit.launch(headless=False,slow_mo=50)
+            browser = p.chromium.launch(headless=False)
             page = browser.new_page()
             page.goto("https://www.texasgasservice.com/account")
             page.fill("input#txtusername", uname)
@@ -16,10 +16,11 @@ def Scraper(uname,passwd):
 
             # Additional click handling (if needed)
             try:
-                page.click('.btn-blue.full-width')
+                page.click('.fsrButton.fsrButton__inviteDecline.fsrDeclineButton')
             except:
                 pass
-
+            
+            page.wait_for_selector('span[_ngcontent-ng-c3434576881=""]')
             account_number_elements = page.query_selector_all('span[_ngcontent-ng-c3434576881=""]')
             account_numbers = [el.inner_text() for el in account_number_elements]
             acc_no = account_numbers[1]
