@@ -1,10 +1,9 @@
-Here's a GitHub documentation template for your web scraping project using Playwright, BeautifulSoup, and Pandas for extracting and storing data from a website:[https://www.texasgasservice.com/account](https://www.texasgasservice.com/account)
 
 ---
 
 # Web Scraping for Bill Data from Texas Gas Service Website
 
-This project utilizes Playwright for browser automation, BeautifulSoup for HTML parsing, and Pandas for data manipulation to scrape bill data from the Texas Gas Service website.
+This project utilizes Playwright for browser automation, BeautifulSoup for HTML parsing, and Pandas for data manipulation to scrape bill data from the Texas Gas Service website.[https://www.texasgasservice.com/account](https://www.texasgasservice.com/account)
 
 ## Overview
 
