@@ -1,4 +1,4 @@
-Certainly! Here's a GitHub documentation template for your web scraping project using Playwright, BeautifulSoup, and Pandas for extracting and storing data from a website:[https://www.texasgasservice.com/account](https://www.texasgasservice.com/account)
+Here's a GitHub documentation template for your web scraping project using Playwright, BeautifulSoup, and Pandas for extracting and storing data from a website:[https://www.texasgasservice.com/account](https://www.texasgasservice.com/account)
 
 ---
 
